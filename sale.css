@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+     margin:0;
+    padding: 0;
+    min-width: 250px;
+}
+
+.meni{
+    height: 100px; 
+    background-color: #E0E0E0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+}
+
+.meni li{
+    font-size: 150%;
+    display: inline;
+
+}
+.meni ul{
+    list-style:none;
+    margin-top: -50px;
+    padding:0;
+    text-align:center;
+}
+
+.meni a{
+    display:inline-block;
+    padding:15px;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("https://cdn.worldvectorlogo.com/logos/general-electric-black.svg");
+    background-size: 100px 100px;
+    transform: translateY(-50%);
+}
+
+.sadrzaj{
+    height: 100%;
+    background-color: #404040;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+   
+
+}
+
+a.nounderline {
+    text-decoration: none; 
+}
+
+.tabelaSala{
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.headerSprat{
+    border: 1px solid white;
+    background-color: #C0C0C0;
+    text-align: center;
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.headerRedni{
+    text-align: left;
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    background-color: #D3D3D3;
+
+   
+
+}
+
+.sala{
+	border: 1px solid #C0C0C0;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+
+   
+}
+.slobodnaSala{
+	border: 1px solid #C0C0C0;
+    background-color: green;
+    vertical-align: top;
+    margin-left: 10px;
+
+}
+
+.zauzetaSala{
+	border: 1px solid #C0C0C0;
+    background-color: orange;
+    vertical-align: top;
+}
+
+.kancelarija{
+	border: 1px solid #C0C0C0;
+    background-color: grey;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 600px) {
+
+
+.headerSprat{
+    padding: 10px;
+
+    display: none;
+}
+.headerRedni{
+
+    display: none;
+
+}
+.sala{
+    width: 30px;
+
+    padding-bottom:20px;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+}
+
+
+.meni{
+  height: 200px;
+}
+
+.meni li{
+    display: block;
+    font-size: 150%;
+
+}
+.meni ul{
+    list-style:none;
+    margin-top: -40px;
+    text-align:center;
+}
+.meni a{
+    padding:0px;
+}
+
+}

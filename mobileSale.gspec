@@ -1,0 +1,52 @@
+@objects
+	meni	.meni
+	sadrzaj  .sadrzaj
+	logo   .logo
+	tabelaSala  .tabelaSala
+	headerRedni .headerRedni
+	headerSprat .headerSprat
+	slobodnaSala .slobodnaSala
+	zauzetaSala .zauzetaSala
+	sala .sala
+	kancelarija .kancelarija
+	a a 
+	li li
+
+= Meni section =
+	meni:
+		centered horizontally inside screen 1px
+		inside screen
+		height 200px
+	logo:
+		height 100px
+		width 100px
+		above meni -50px
+		centered horizontally inside meni
+	a:
+		css display is "inline-block"
+	li:
+		css display is "block"
+= Main section =
+	sadrzaj:
+    		below meni 10px
+	tabelaSala:
+		inside sadrzaj
+		centered horizontally inside sadrzaj
+		below meni 10px
+		contains sala, kancelarija, slobodnaSala, zauzetaSala
+	zauzetaSala:
+		inside tabelaSala
+		css background-color is "rgb(255, 165, 0)"
+	slobodnaSala:
+		inside tabelaSala
+		css background-color is "rgb(0, 128, 0)"
+	sala:
+		inside tabelaSala
+		css background-color is "rgb(255, 255, 255)"
+	kancelarija:
+		inside tabelaSala
+		css background-color is "rgb(128, 128, 128)"
+	headerRedni:
+		absent
+	headerSprat:
+		absent

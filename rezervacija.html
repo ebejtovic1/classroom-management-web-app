@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<link rel="stylesheet" type="text/css" href="rezervacija.css">
+<title>Spirala 1, Zadatak 4</title>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</HEAD>
+<BODY>
+  <div class="meni">
+    <div class="logo">
+    </div>
+    <ul>
+    <li><a href="pocetna.html">Početna</a></li>
+    <li><a href="sale.html">Sale</a></li>
+    <li><a href="unos.html">Unos</a></li>
+    <li><a href="rezervacija.html" class="nounderline">Rezervacije</a></li>
+    <li><a href="#">Osobe</a></li>
+    </ul>
+  
+</div>
+
+<div class="sadrzaj"> 
+
+<form class="forma">
+  <label for="sale">Lista sala: </label> 
+  <select name="sale" id="sale">
+    <option value="0-01">0-01</option>
+    <option value="0-02">0-02</option>
+    <option value="0-03">0-03</option>
+    <option value="0-04">0-04</option>
+    <option value="0-05">0-05</option>
+    <option value="0-06">0-06</option>
+    <option value="0-07">0-07</option>
+    <option value="0-08">0-08</option>
+    <option value="0-09">0-09</option>
+    <option value="1-01">1-01</option>
+    <option value="1-02">1-02</option>
+    <option value="1-03">1-03</option>
+    <option value="1-04">1-04</option>
+    <option value="1-05">1-05</option>
+    <option value="1-06">1-06</option>
+    <option value="1-07">1-07</option>
+    <option value="1-08">1-08</option>
+    <option value="1-09">1-09</option>
+    <option value="VA1">VA1</option>
+    <option value="VA2">VA2</option>
+    <option value="MA">MA</option>
+    <option value="EE1">EE1</option>
+    <option value="EE2">EE2</option>
+  </select>
+  <br><br>
+  <label for="periodicna">Periodična: </label> <input type="checkbox" id="periodicna"><br><br>
+  <label for="pocetak">Početak: </label> <input type="time" id="pocetak" name="pocetak"><br><br>
+  <label for="kraj">Kraj: </label> <input type="time" id="kraj" name="kraj"><br>
+</form> 
+
+<table class="tabelaSala">
+        <tr>
+          <th colspan="7" class="nazivMjeseca">Novembar</th> 
+        </tr>
+        <tr class="daniRed">
+          <td class="dani">PON</td>
+          <td class="dani">UTO</td>
+          <td class="dani">SRI</td>
+          <td class="dani">ČET</td>
+          <td class="dani">PET</td>
+          <td class="dani">SUB</td>
+          <td class="dani">NED</td>
+        </tr>
+        <tr class="prviRed">
+          <td class="nevidljiva"></td>
+          <td class="nevidljiva"></td>
+          <td class="nevidljiva"></td>
+          <td class="nevidljiva"></td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="drugiRed">
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td class="zauzeta"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="treciRed">
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td class="zauzeta"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="cetvrtiRed">
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td class="zauzeta"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>21</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>23</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="petiRed">
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>26</td>
+              </tr>
+              <tr>
+                <td class="zauzeta"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>28</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>29</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="nevidljiva"></td>
+        </tr>
+</table>
+<br>
+<div class="dugmad">
+<button type="button" class="button">Prethodni</button>
+<button type="button" class="button1">Sljedeci</button>
+</div>
+</div>
+</BODY>
+</HTML>

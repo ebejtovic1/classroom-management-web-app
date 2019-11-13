@@ -1,0 +1,475 @@
+{
+  "testId" : "1-unos.gspec",
+  "name" : "unos.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Mutation test",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  unos.gspec --url http://localhost/unos.html --size 1200x800 --offset 5 --htmlreport mutation-izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: unos.gspec included tags: ",
+          "status" : "info",
+          "time" : 1573676121200,
+          "sections" : [ {
+            "name" : "Meni section",
+            "place" : {
+              "filePath" : "unos.gspec",
+              "lineNumber" : 15
+            },
+            "objects" : [ {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "centered horizontally inside screen 1px",
+                "highlight" : [ "meni", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "inside screen",
+                "meta" : [ ],
+                "highlight" : [ "meni", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "height 100px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "100px",
+                  "realDistance" : "100px"
+                } ],
+                "highlight" : [ "meni" ]
+              } ]
+            }, {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "height 100px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "logo",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "100px",
+                  "realDistance" : "100px"
+                } ],
+                "highlight" : [ "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "width 100px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "logo",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "100px",
+                  "realDistance" : "100px"
+                } ],
+                "highlight" : [ "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 23
+                },
+                "name" : "above meni -50px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "-50px",
+                  "realDistance" : "-50px"
+                } ],
+                "highlight" : [ "logo", "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "centered horizontally inside meni",
+                "highlight" : [ "logo", "meni" ]
+              } ]
+            }, {
+              "name" : "a",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "a" ]
+              } ]
+            }, {
+              "name" : "li",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "css display is \"inline\"",
+                "highlight" : [ "li" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "unos.gspec",
+              "lineNumber" : 29
+            },
+            "objects" : [ {
+              "name" : "sadrzaj",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "below meni 10px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "sadrzaj",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "10px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "sadrzaj", "meni" ]
+              } ]
+            }, {
+              "name" : "forma",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 33
+                },
+                "name" : "inside sadrzaj",
+                "meta" : [ ],
+                "highlight" : [ "forma", "sadrzaj" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "centered horizontally inside sadrzaj",
+                "highlight" : [ "forma", "sadrzaj" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 35
+                },
+                "name" : "below meni 10px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "forma",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "10px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "forma", "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "contains unos, odgovornaOsoba, brojMjesta, naziv, sprat",
+                "highlight" : [ "forma", "unos", "odgovornaOsoba", "brojMjesta", "naziv", "sprat" ]
+              } ]
+            }, {
+              "name" : "unos",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 38
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "unos", "forma" ]
+              } ]
+            }, {
+              "name" : "sprat",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 40
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "sprat", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "sprat" ]
+              } ]
+            }, {
+              "name" : "brojMjesta",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 43
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "brojMjesta", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 44
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "brojMjesta" ]
+              } ]
+            }, {
+              "name" : "odgovornaOsoba",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 46
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "odgovornaOsoba", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 47
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "odgovornaOsoba" ]
+              } ]
+            }, {
+              "name" : "label",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "label", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 50
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "label" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "unos.gspec",
+                  "lineNumber" : 51
+                },
+                "name" : "width 170px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "label",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "label",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "170px",
+                  "realDistance" : "170px"
+                } ],
+                "highlight" : [ "label" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "meni" : {
+              "area" : [ 0, 60, 1171, 100 ]
+            },
+            "a" : {
+              "area" : [ 331, 110, 105, 58 ]
+            },
+            "sprat" : {
+              "area" : [ 597, 324, 145, 29 ]
+            },
+            "naziv" : {
+              "area" : [ 597, 180, 145, 29 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 1171, 889 ]
+            },
+            "unos" : {
+              "area" : [ 550, 387, 70, 30 ]
+            },
+            "label" : {
+              "area" : [ 427, 180, 170, 30 ]
+            },
+            "forma" : {
+              "area" : [ 427, 170, 315, 265 ]
+            },
+            "sadrzaj" : {
+              "area" : [ 0, 170, 1171, 719 ]
+            },
+            "odgovornaOsoba" : {
+              "area" : [ 597, 276, 145, 29 ]
+            },
+            "logo" : {
+              "area" : [ 535, 10, 100, 100 ]
+            },
+            "brojMjesta" : {
+              "area" : [ 597, 228, 144, 29 ]
+            },
+            "li" : {
+              "area" : [ 331, 126, 105, 26 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        }, {
+          "name" : "Mutation testing: unos.gspec included tags: ",
+          "status" : "info",
+          "time" : 1573676121201,
+          "mutationReport" : {
+            "objectMutationStatistics" : {
+              "meni" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "a" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "sprat" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "naziv" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "screen" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "unos" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "label" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "forma" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "sadrzaj" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "odgovornaOsoba" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "logo" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "brojMjesta" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "li" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              }
+            },
+            "totalPassed" : 130,
+            "totalFailed" : 0,
+            "failedRatio" : 0.0,
+            "totalMutations" : 130
+          },
+          "type" : "mutation"
+        } ],
+        "time" : 1573676114488,
+        "type" : "node"
+      } ],
+      "time" : 1573676109027,
+      "type" : "node"
+    } ]
+  }
+}

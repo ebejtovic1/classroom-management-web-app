@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+}
+
+.meni{
+    height: 100px; 
+    background-color: #E0E0E0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+ 
+
+}
+
+.meni li{
+    font-size: 150%;
+    display: inline;
+
+}
+.meni ul{
+    list-style:none;
+    margin-top: -50px;
+    padding:0;
+    text-align:center;
+}
+.meni a{
+    display:inline-block;
+    padding:15px;
+}
+
+html, body{
+    min-width: 250px;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+
+
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("https://cdn.worldvectorlogo.com/logos/general-electric-black.svg");
+    background-size: 100px 100px;
+    transform: translateY(-50%);
+}
+
+.sadrzaj{
+    height: 100%;
+    background-color: #404040;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+}
+@media screen and (max-height:790px) {
+    .sadrzaj{
+        height: 790px;
+    }
+    }
+
+.forma{
+    display: table;
+    margin:0 auto;
+    padding-top: 10px;
+
+}
+
+.dugmad{
+    display: table;
+    margin: 0 auto;
+}
+
+.forma label { 
+    width: 100px; 
+    display: inline-block;
+    color: #E0E0E0;
+    height: 30px;
+    font-size: 130%;
+}
+
+#pocetak, #kraj{
+    display: inline-block;
+    border: 1px solid #99ddff;
+}
+
+#periodicna{
+    display: inline-block;
+}
+
+#sale{
+    width: 96px;
+    height: 22px;
+    border: 1px solid #99ddff;
+}
+
+.tabelaSala{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: #E0E0E0;
+    border: 1px solid #99ddff;
+    border-spacing: 15px;
+}
+
+.dani{
+    border: 2px solid #404040;
+    width: 20px;
+    text-align: center;
+
+}
+.nazivMjeseca{
+    text-align: left;
+    height: 30px;
+}
+
+.malyTabela{
+    width: 45px;
+    height: 50px;
+    text-align: center;
+    border-collapse: collapse;
+}
+.malyTabela td{
+    border: 2px solid #404040;
+}
+
+.nevidljiva{
+    height: 45px;
+}
+
+.slobodna{
+    border: 2px solid #404040;
+    margin: auto;
+    background-color: green;
+    width: 100%;
+    height: 20px;
+}
+
+.zauzeta{
+    border: 2px solid #404040;
+    margin-top: -10px;
+    background-color: orange;
+    width: 100%;
+    height: 20px;
+}
+
+.button{
+    width: 100px;
+    height: 30px;
+    font-size: 120%;
+  background-color: #E0E0E0;
+  color: black;
+  border: 1px solid #99ddff;
+  margin: auto;
+  display: inline-block;
+
+}
+
+.button:hover {
+  background-color: #404040;
+  color: white;
+  border: 1px solid white;
+}
+
+.button1{
+    margin-left: 250px;
+    width: 100px;
+    height: 30px;
+    font-size: 120%;
+  background-color: #E0E0E0;
+  color: black;
+  border: 1px solid #99ddff;
+  display: inline-block;
+}
+
+.button1:hover {
+  background-color: #404040;
+  color: white;
+  border: 1px solid white;
+}
+
+a.nounderline {
+    text-decoration: none; 
+}
+
+    
+@media screen and (max-width:600px) {
+.meni{
+  height: 200px;
+}
+
+.meni li{
+    display: block;
+    font-size: 150%;
+
+}
+.meni ul{
+    list-style:none;
+    margin-top: -40px;
+    text-align:center;
+}
+.meni a{
+    padding:0px;
+}
+    .tabelaSala{
+        width: 10%;
+
+    }
+
+    .prviRed > *{
+        display: none;
+    }
+    .prviRed {
+        display: table-cell;
+    }
+
+    .drugiRed > *{
+        display: inline-block;
+    }
+    .drugiRed {
+        display: table-cell;
+    }
+     .treciRed > *{
+        display: none;
+    }
+    .treciRed {
+        display: table-cell;
+    }
+
+     .cetvrtiRed > *{
+        display: none;
+    }
+    .cetvrtiRed {
+        display: table-cell;
+    }
+
+    .petiRed > *{
+        display: none;
+    }
+    .petiRed {
+        display: table-cell;
+    }
+
+
+.daniRed > *{
+        display: inline-block;
+        width: 100%
+
+
+
+    }
+    .daniRed {
+        display: table-cell;
+        
+    }
+    .nevidljiva{
+        display: block;
+        margin-bottom: 3px;
+    }
+
+.dani{
+    margin: 14px 0px;
+
+}
+
+.button1{
+    margin-left: 10px;
+}
+
+}

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    min-width: 250px;
+}
+
+.meni{
+  box-sizing: border-box;
+  clear: both;
+    height: 100px; 
+    background-color: #E0E0E0;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+ 
+
+}
+
+a.nounderline {
+    text-decoration: none; 
+}
+
+.meni li{
+    font-size: 150%;
+    display: inline;
+
+}
+.meni ul{
+    list-style:none;
+    margin-top: -50px;
+    padding:0;
+    text-align:center;
+}
+.meni a{
+    display:inline-block;
+    padding:15px;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("https://cdn.worldvectorlogo.com/logos/general-electric-black.svg");
+    background-size: 100px 100px;
+    transform: translateY(-50%);
+}
+
+.sadrzaj{
+
+    background-color: #404040;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+}
+
+
+.row {
+  grid-gap: 10px 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+
+
+}
+
+.column {
+
+vertical-align: middle;
+  font-size: 30px;
+}
+
+.column img {
+   width: 400px;
+   height: 270px;
+   vertical-align: middle;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .row {
+   display: grid;
+  grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .row {
+   display: grid;
+  grid-template-columns: auto;
+  }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+.meni{
+  height: 200px;
+  width: 100%;
+}
+
+.meni li{
+    display: block;
+    font-size: 150%;
+
+}
+.meni ul{
+    list-style:none;
+    margin-top: -40px;
+    text-align:center;
+}
+.meni a{
+    padding:0px;
+}
+
+  .column img {
+    width: calc(400px*0.8);
+    height: calc(270px*0.8);
+}
+}
+@media screen and (max-width: 320px) {
+.column img{
+   width: calc(400px*0.6);
+    height: calc(270px*0.6);
+}
+}
+
+
+
+
+
+

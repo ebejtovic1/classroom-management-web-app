@@ -1,0 +1,363 @@
+{
+  "testId" : "1-mobilepocetna.gspec",
+  "name" : "mobilePocetna.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Mutation test",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  mobilePocetna.gspec --url http://localhost/pocetna.html --size 600x600 --offset 5 --htmlreport mutation-izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: mobilePocetna.gspec included tags: ",
+          "status" : "info",
+          "time" : 1573661974680,
+          "sections" : [ {
+            "name" : "Meni section",
+            "place" : {
+              "filePath" : "mobilePocetna.gspec",
+              "lineNumber" : 11
+            },
+            "objects" : [ {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 13
+                },
+                "name" : "centered horizontally inside screen 1px",
+                "highlight" : [ "meni", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 14
+                },
+                "name" : "inside screen",
+                "meta" : [ ],
+                "highlight" : [ "meni", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "height 200px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "200px",
+                  "realDistance" : "200px"
+                } ],
+                "highlight" : [ "meni" ]
+              } ]
+            }, {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "height 100px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "logo",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "100px",
+                  "realDistance" : "100px"
+                } ],
+                "highlight" : [ "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "width 100px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "logo",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "100px",
+                  "realDistance" : "100px"
+                } ],
+                "highlight" : [ "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "above meni -50px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "-50px",
+                  "realDistance" : "-50px"
+                } ],
+                "highlight" : [ "logo", "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "centered horizontally inside meni",
+                "highlight" : [ "logo", "meni" ]
+              } ]
+            }, {
+              "name" : "a",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "a" ]
+              } ]
+            }, {
+              "name" : "li",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "css display is \"block\"",
+                "highlight" : [ "li" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "mobilePocetna.gspec",
+              "lineNumber" : 25
+            },
+            "objects" : [ {
+              "name" : "sadrzaj",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "below meni 10px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "sadrzaj",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "10px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "sadrzaj", "meni" ]
+              } ]
+            }, {
+              "name" : "row",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 29
+                },
+                "name" : "inside sadrzaj",
+                "meta" : [ ],
+                "highlight" : [ "row", "sadrzaj" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "css display is \"grid\"",
+                "highlight" : [ "row" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "css justify-content is \"center\"",
+                "highlight" : [ "row" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "css grid-template-columns is \"320px\"",
+                "highlight" : [ "row" ]
+              } ]
+            }, {
+              "name" : "img",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "width 320px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "img",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "img",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "320px",
+                  "realDistance" : "320px"
+                } ],
+                "highlight" : [ "img" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 35
+                },
+                "name" : "height 216px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "img",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "img",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "216px",
+                  "realDistance" : "216px"
+                } ],
+                "highlight" : [ "img" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobilePocetna.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "inside row",
+                "meta" : [ ],
+                "highlight" : [ "img", "row" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "meni" : {
+              "area" : [ 0, 60, 571, 200 ]
+            },
+            "a" : {
+              "area" : [ 247, 120, 75, 28 ]
+            },
+            "img" : {
+              "area" : [ 125, 270, 320, 216 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 571, 2520 ]
+            },
+            "logo" : {
+              "area" : [ 235, 10, 100, 100 ]
+            },
+            "row" : {
+              "area" : [ 0, 270, 571, 2250 ]
+            },
+            "li" : {
+              "area" : [ 0, 120, 571, 28 ]
+            },
+            "sadrzaj" : {
+              "area" : [ 0, 270, 571, 2250 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        }, {
+          "name" : "Mutation testing: mobilePocetna.gspec included tags: ",
+          "status" : "info",
+          "time" : 1573661974681,
+          "mutationReport" : {
+            "objectMutationStatistics" : {
+              "meni" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "a" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "img" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "screen" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "logo" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "row" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "li" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              },
+              "sadrzaj" : {
+                "passed" : 10,
+                "failed" : 0,
+                "failedMutations" : [ ]
+              }
+            },
+            "totalPassed" : 80,
+            "totalFailed" : 0,
+            "failedRatio" : 0.0,
+            "totalMutations" : 80
+          },
+          "type" : "mutation"
+        } ],
+        "time" : 1573661971128,
+        "type" : "node"
+      } ],
+      "time" : 1573661965780,
+      "type" : "node"
+    } ]
+  }
+}

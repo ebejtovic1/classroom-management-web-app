@@ -1,0 +1,926 @@
+{
+  "testId" : "1-mobilerezervacija.gspec",
+  "name" : "mobileRezervacija.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  mobileRezervacija.gspec --url http://localhost/rezervacija.html --size 600x600 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: mobileRezervacija.gspec included tags: ",
+          "status" : "info",
+          "time" : 1573661628486,
+          "sections" : [ {
+            "name" : "Meni section",
+            "place" : {
+              "filePath" : "mobileRezervacija.gspec",
+              "lineNumber" : 28
+            },
+            "objects" : [ {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "centered horizontally inside screen 1px",
+                "highlight" : [ "meni", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "inside screen",
+                "meta" : [ ],
+                "highlight" : [ "meni", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "height 200px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "200px",
+                  "realDistance" : "200px"
+                } ],
+                "highlight" : [ "meni" ]
+              } ]
+            }, {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "height 100px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "logo",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "100px",
+                  "realDistance" : "100px"
+                } ],
+                "highlight" : [ "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 35
+                },
+                "name" : "width 100px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "logo",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "100px",
+                  "realDistance" : "100px"
+                } ],
+                "highlight" : [ "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "above meni -50px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "logo",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "-50px",
+                  "realDistance" : "-50px"
+                } ],
+                "highlight" : [ "logo", "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 37
+                },
+                "name" : "centered horizontally inside meni",
+                "highlight" : [ "logo", "meni" ]
+              } ]
+            }, {
+              "name" : "a",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 39
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "a" ]
+              } ]
+            }, {
+              "name" : "li",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "css display is \"block\"",
+                "highlight" : [ "li" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "mobileRezervacija.gspec",
+              "lineNumber" : 42
+            },
+            "objects" : [ {
+              "name" : "sadrzaj",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 44
+                },
+                "name" : "below meni 10px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "sadrzaj",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "10px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "sadrzaj", "meni" ]
+              } ]
+            }, {
+              "name" : "tabelaSala",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 46
+                },
+                "name" : "inside sadrzaj",
+                "meta" : [ ],
+                "highlight" : [ "tabelaSala", "sadrzaj" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 47
+                },
+                "name" : "below forma",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "tabelaSala",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "forma",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "tabelaSala", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 48
+                },
+                "name" : "centered horizontally inside sadrzaj",
+                "highlight" : [ "tabelaSala", "sadrzaj" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "contains daniRed, drugiRed, nazivMjeseca",
+                "highlight" : [ "tabelaSala", "daniRed", "drugiRed", "nazivMjeseca" ]
+              } ]
+            }, {
+              "name" : "zauzeta",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 51
+                },
+                "name" : "inside tabelaSala",
+                "meta" : [ ],
+                "highlight" : [ "zauzeta", "tabelaSala" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "css background-color is \"rgb(255, 165, 0)\"",
+                "highlight" : [ "zauzeta" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 53
+                },
+                "name" : "below nazivMjeseca",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "zauzeta",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "nazivMjeseca",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "93px"
+                } ],
+                "highlight" : [ "zauzeta", "nazivMjeseca" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 54
+                },
+                "name" : "right-of daniRed",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "zauzeta",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "daniRed",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "34px"
+                } ],
+                "highlight" : [ "zauzeta", "daniRed" ]
+              } ]
+            }, {
+              "name" : "forma",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 57
+                },
+                "name" : "inside sadrzaj",
+                "meta" : [ ],
+                "highlight" : [ "forma", "sadrzaj" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 58
+                },
+                "name" : "centered horizontally inside sadrzaj",
+                "highlight" : [ "forma", "sadrzaj" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 59
+                },
+                "name" : "below meni 10px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "forma",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "10px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "forma", "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 60
+                },
+                "name" : "contains sale, periodicna, pocetak, kraj",
+                "highlight" : [ "forma", "sale", "periodicna", "pocetak", "kraj" ]
+              } ]
+            }, {
+              "name" : "sale",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 63
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "sale", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 64
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "sale" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 65
+                },
+                "name" : "below meni",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "sale",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "23px"
+                } ],
+                "highlight" : [ "sale", "meni" ]
+              } ]
+            }, {
+              "name" : "periodicna",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 67
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "periodicna", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 68
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "periodicna" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 69
+                },
+                "name" : "below sale",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "periodicna",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "sale",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "29px"
+                } ],
+                "highlight" : [ "periodicna", "sale" ]
+              } ]
+            }, {
+              "name" : "pocetak",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 71
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "pocetak", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 72
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "pocetak" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 73
+                },
+                "name" : "below periodicna",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "pocetak",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "periodicna",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "35px"
+                } ],
+                "highlight" : [ "pocetak", "periodicna" ]
+              } ]
+            }, {
+              "name" : "kraj",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 75
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "kraj", "forma" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 76
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "kraj" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 77
+                },
+                "name" : "below pocetak",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "kraj",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "pocetak",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "28px"
+                } ],
+                "highlight" : [ "kraj", "pocetak" ]
+              } ]
+            }, {
+              "name" : "dugmad",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 79
+                },
+                "name" : "inside sadrzaj",
+                "meta" : [ ],
+                "highlight" : [ "dugmad", "sadrzaj" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 80
+                },
+                "name" : "below tabelaSala",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "dugmad",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "tabelaSala",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "18px"
+                } ],
+                "highlight" : [ "dugmad", "tabelaSala" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 81
+                },
+                "name" : "contains button, button1",
+                "highlight" : [ "dugmad", "button", "button1" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 82
+                },
+                "name" : "centered horizontally inside sadrzaj",
+                "highlight" : [ "dugmad", "sadrzaj" ]
+              } ]
+            }, {
+              "name" : "nazivMjeseca",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 84
+                },
+                "name" : "above daniRed",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "nazivMjeseca",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "daniRed",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "15px"
+                } ],
+                "highlight" : [ "nazivMjeseca", "daniRed" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 85
+                },
+                "name" : "inside tabelaSala",
+                "meta" : [ ],
+                "highlight" : [ "nazivMjeseca", "tabelaSala" ]
+              } ]
+            }, {
+              "name" : "daniRed",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 87
+                },
+                "name" : "left-of prviRed",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "daniRed",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "prviRed",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "15px"
+                } ],
+                "highlight" : [ "daniRed", "prviRed" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 88
+                },
+                "name" : "below nazivMjeseca",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "daniRed",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "nazivMjeseca",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "15px"
+                } ],
+                "highlight" : [ "daniRed", "nazivMjeseca" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 89
+                },
+                "name" : "inside tabelaSala",
+                "meta" : [ ],
+                "highlight" : [ "daniRed", "tabelaSala" ]
+              } ]
+            }, {
+              "name" : "drugiRed",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 91
+                },
+                "name" : "right-of daniRed",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "drugiRed",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "daniRed",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "32px"
+                } ],
+                "highlight" : [ "drugiRed", "daniRed" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 92
+                },
+                "name" : "below nazivMjeseca",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "drugiRed",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "nazivMjeseca",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "15px"
+                } ],
+                "highlight" : [ "drugiRed", "nazivMjeseca" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 93
+                },
+                "name" : "inside tabelaSala",
+                "meta" : [ ],
+                "highlight" : [ "drugiRed", "tabelaSala" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 94
+                },
+                "name" : "css display is \"table-cell\"",
+                "highlight" : [ "drugiRed" ]
+              } ]
+            }, {
+              "name" : "button",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 96
+                },
+                "name" : "inside dugmad",
+                "meta" : [ ],
+                "highlight" : [ "button", "dugmad" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 97
+                },
+                "name" : "below tabelaSala",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "tabelaSala",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "18px"
+                } ],
+                "highlight" : [ "button", "tabelaSala" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 98
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "button" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 99
+                },
+                "name" : "width 100px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "button",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "100px",
+                  "realDistance" : "100px"
+                } ],
+                "highlight" : [ "button" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 100
+                },
+                "name" : "height 30px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "button",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "30px",
+                  "realDistance" : "30px"
+                } ],
+                "highlight" : [ "button" ]
+              } ]
+            }, {
+              "name" : "button1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 102
+                },
+                "name" : "inside dugmad",
+                "meta" : [ ],
+                "highlight" : [ "button1", "dugmad" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 103
+                },
+                "name" : "below tabelaSala",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button1",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "tabelaSala",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "18px"
+                } ],
+                "highlight" : [ "button1", "tabelaSala" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 104
+                },
+                "name" : "css display is \"inline-block\"",
+                "highlight" : [ "button1" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 105
+                },
+                "name" : "width 100px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button1",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "button1",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "100px",
+                  "realDistance" : "100px"
+                } ],
+                "highlight" : [ "button1" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobileRezervacija.gspec",
+                  "lineNumber" : 106
+                },
+                "name" : "height 30px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button1",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "button1",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "30px",
+                  "realDistance" : "30px"
+                } ],
+                "highlight" : [ "button1" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "meni" : {
+              "area" : [ 0, 60, 571, 200 ]
+            },
+            "a" : {
+              "area" : [ 247, 120, 75, 28 ]
+            },
+            "kraj" : {
+              "area" : [ 289, 430, 72, 20 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 571, 1060 ]
+            },
+            "forma" : {
+              "area" : [ 185, 270, 200, 184 ]
+            },
+            "daniRed" : {
+              "area" : [ 203, 527, 38, 364 ]
+            },
+            "sadrzaj" : {
+              "area" : [ 0, 270, 571, 790 ]
+            },
+            "zauzeta" : {
+              "area" : [ 275, 605, 43, 24 ]
+            },
+            "prviRed" : {
+              "area" : [ 256, 527, 2, 364 ]
+            },
+            "tabelaSala" : {
+              "area" : [ 187, 464, 196, 443 ]
+            },
+            "button" : {
+              "area" : [ 178, 925, 100, 30 ]
+            },
+            "sale" : {
+              "area" : [ 289, 283, 96, 22 ]
+            },
+            "drugiRed" : {
+              "area" : [ 273, 527, 47, 364 ]
+            },
+            "logo" : {
+              "area" : [ 235, 10, 100, 100 ]
+            },
+            "nazivMjeseca" : {
+              "area" : [ 203, 480, 164, 32 ]
+            },
+            "pocetak" : {
+              "area" : [ 289, 382, 72, 20 ]
+            },
+            "li" : {
+              "area" : [ 0, 120, 571, 28 ]
+            },
+            "button1" : {
+              "area" : [ 292, 925, 100, 30 ]
+            },
+            "periodicna" : {
+              "area" : [ 289, 334, 13, 13 ]
+            },
+            "dugmad" : {
+              "area" : [ 178, 925, 214, 30 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1573661622485,
+        "type" : "node"
+      } ],
+      "time" : 1573661617563,
+      "type" : "node"
+    } ]
+  }
+}

@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+}
+
+.meni{
+    height: 100px; 
+    background-color: #E0E0E0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+}
+html, body{
+    height: 100%;
+     margin:0;
+    padding: 0;
+}
+
+.meni li{
+    font-size: 150%;
+    display: inline;
+
+}
+a.nounderline {
+    text-decoration: none; 
+}
+.meni ul{
+    list-style:none;
+    margin-top: -50px;
+    padding:0;
+    text-align:center;
+}
+.meni a{
+    display:inline-block;
+    padding:15px;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("https://cdn.worldvectorlogo.com/logos/general-electric-black.svg");
+    background-size: 100px 100px;
+    transform: translateY(-50%);
+}
+
+.sadrzaj{
+    height: 100%; 
+    background-color: #404040;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+}
+.forma{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #99ddff;
+}
+
+.forma label { 
+    width: 170px; 
+    display: inline-block;
+    color: #E0E0E0;
+    height: 30px;
+    font-size: 130%;
+ 
+}
+@media screen and (max-width: 600px) {
+.forma{
+     width: 300px;
+}
+
+
+  .forma label { 
+    width: 170px; 
+    color: #E0E0E0;
+    height: 30px;
+    font-size: 130%;
+ 
+}
+}
+
+#naziv{
+    display: inline-block;
+    height: 25px;
+    width: 200px;
+    border: 1px solid #99ddff;
+}
+
+@media screen and (max-width: 600px) {
+  #naziv{
+    display:block;
+}
+}
+#brojMjesta{
+    display: inline-block;
+    height: 25px;
+    width: 200px;
+    border: 1px solid #99ddff;
+}
+@media screen and (max-width: 600px) {
+  #brojMjesta{
+    display: block;
+}
+}
+
+#sprat{
+    display: inline-block;
+    height: 25px;
+    width: 200px;
+    border: 1px solid #99ddff;
+}
+
+@media screen and (max-width: 600px) {
+  #sprat{
+    display: block;
+
+}
+}
+
+#odgovornaOsoba{
+    display: inline-block;
+    height: 25px;
+    width: 200px;
+    border: 1px solid #99ddff;
+}
+
+@media screen and (max-width: 600px) {
+ #odgovornaOsoba{
+    display: block;
+}
+}
+
+#unos{
+    width: 50px;
+    height: 30px;
+    margin:0 50%;
+    position:relative;
+    left:-50px;
+    font-size: 110%;
+    color: #404040;
+    border: 1px solid #99ddff;
+}
+
+@media screen and (max-width: 600px) {
+
+.meni{
+  height: 200px;
+}
+
+.meni li{
+    display: block;
+    font-size: 150%;
+
+}
+.meni ul{
+    list-style:none;
+    margin-top: -40px;
+    text-align:center;
+}
+.meni a{
+    padding:0px;
+}
+
+ #unos{
+    height: 50px;
+    font-size: 110%;
+    color: #404040;
+    border: 1px solid #99ddff;
+}
+}
