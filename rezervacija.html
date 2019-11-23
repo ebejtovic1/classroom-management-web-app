@@ -3,10 +3,12 @@
 <HEAD>
 <link rel="stylesheet" type="text/css" href="rezervacija.css">
 <title>Spirala 1, Zadatak 4</title>
+<SCRIPT src="kalendar.js"></SCRIPT>
+<SCRIPT src="pomocni.js"></SCRIPT>
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </HEAD>
-<BODY>
+<BODY onload="myFunction()">
   <div class="meni">
     <div class="logo">
     </div>
@@ -21,10 +23,9 @@
 </div>
 
 <div class="sadrzaj"> 
-
 <form class="forma">
   <label for="sale">Lista sala: </label> 
-  <select name="sale" id="sale">
+  <select onchange="myFunction()" name="sale" id="sale">
     <option value="0-01">0-01</option>
     <option value="0-02">0-02</option>
     <option value="0-03">0-03</option>
@@ -51,13 +52,12 @@
   </select>
   <br><br>
   <label for="periodicna">Periodična: </label> <input type="checkbox" id="periodicna"><br><br>
-  <label for="pocetak">Početak: </label> <input type="time" id="pocetak" name="pocetak"><br><br>
-  <label for="kraj">Kraj: </label> <input type="time" id="kraj" name="kraj"><br>
+  <label for="pocetak">Početak: </label> <input onchange="myFunction()" type="time" id="pocetak" name="pocetak"><br><br>
+  <label for="kraj">Kraj: </label> <input onchange="myFunction()" type="time" id="kraj" name="kraj"><br>
 </form> 
-
-<table class="tabelaSala">
+<table id="tabelaSala">
         <tr>
-          <th colspan="7" class="nazivMjeseca">Novembar</th> 
+          <th colspan="7" id="nazivMjeseca">Novembar</th> 
         </tr>
         <tr class="daniRed">
           <td class="dani">PON</td>
@@ -69,14 +69,40 @@
           <td class="dani">NED</td>
         </tr>
         <tr class="prviRed">
-          <td class="nevidljiva"></td>
-          <td class="nevidljiva"></td>
-          <td class="nevidljiva"></td>
-          <td class="nevidljiva"></td>
-          <td>
+          <td class="nevidljiva">
             <table class="malyTabela">
               <tr>
-                <td>1</td>
+                <td class="gore">1</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="nevidljiva">
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">1</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="nevidljiva">
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">1</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="nevidljiva">
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">1</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -86,7 +112,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>2</td>
+                <td class="gore">1</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -96,7 +122,17 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>3</td>
+                <td class="gore">2</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">3</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -108,7 +144,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>4</td>
+                <td class="gore">4</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -118,17 +154,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>5</td>
-              </tr>
-              <tr>
-                <td class="zauzeta"></td>
-              </tr>
-            </table>
-          </td>
-          <td>
-            <table class="malyTabela">
-              <tr>
-                <td>6</td>
+                <td class="gore">5</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -138,7 +164,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>7</td>
+                <td class="gore">6</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -148,7 +174,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>8</td>
+                <td class="gore">7</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -158,7 +184,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>9</td>
+                <td class="gore">8</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -168,7 +194,17 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>10</td>
+                <td class="gore">9</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">10</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -180,7 +216,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>11</td>
+                <td class="gore">11</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -190,17 +226,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>12</td>
-              </tr>
-              <tr>
-                <td class="zauzeta"></td>
-              </tr>
-            </table>
-          </td>
-          <td>
-            <table class="malyTabela">
-              <tr>
-                <td>13</td>
+                <td class="gore">12</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -210,7 +236,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>14</td>
+                <td class="gore">13</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -220,7 +246,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>15</td>
+                <td class="gore">14</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -230,7 +256,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>16</td>
+                <td class="gore">15</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -240,7 +266,17 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>17</td>
+                <td class="gore">16</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">17</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -252,7 +288,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>18</td>
+                <td class="gore">18</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -262,17 +298,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>19</td>
-              </tr>
-              <tr>
-                <td class="zauzeta"></td>
-              </tr>
-            </table>
-          </td>
-          <td>
-            <table class="malyTabela">
-              <tr>
-                <td>20</td>
+                <td class="gore">19</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -282,7 +308,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>21</td>
+                <td class="gore">20</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -292,7 +318,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>22</td>
+                <td class="gore">21</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -302,7 +328,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>23</td>
+                <td class="gore">22</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -312,7 +338,17 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>24</td>
+                <td class="gore">23</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">24</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -324,7 +360,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>25</td>
+                <td class="gore">25</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -334,17 +370,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>26</td>
-              </tr>
-              <tr>
-                <td class="zauzeta"></td>
-              </tr>
-            </table>
-          </td>
-          <td>
-            <table class="malyTabela">
-              <tr>
-                <td>27</td>
+                <td class="gore">26</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -354,7 +380,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>28</td>
+                <td class="gore">27</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -364,7 +390,7 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>29</td>
+                <td class="gore">28</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
@@ -374,20 +400,111 @@
           <td>
             <table class="malyTabela">
               <tr>
-                <td>30</td>
+                <td class="gore">29</td>
               </tr>
               <tr>
                 <td class="slobodna"></td>
               </tr>
             </table>
           </td>
-          <td class="nevidljiva"></td>
+          <td>
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">30</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="nevidljiva">
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">31</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+         <tr class="sestiRed">
+          <td class="nevidljiva">
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">25</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="nevidljiva">
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">26</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="nevidljiva">
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">27</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="nevidljiva">
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">28</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="nevidljiva">
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">29</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="nevidljiva">
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">30</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="nevidljiva">
+            <table class="malyTabela">
+              <tr>
+                <td class="gore">31</td>
+              </tr>
+              <tr>
+                <td class="slobodna"></td>
+              </tr>
+            </table>
+          </td>
         </tr>
 </table>
 <br>
 <div class="dugmad">
-<button type="button" class="button">Prethodni</button>
-<button type="button" class="button1">Sljedeci</button>
+<button onclick="prethodni()" type="button" class="button">Prethodni</button>
+<button onclick="sljedeci()" type="button" class="button1">Sljedeci</button>
 </div>
 </div>
 </BODY>
