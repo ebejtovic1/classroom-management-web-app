@@ -99,7 +99,7 @@ a.nounderline {
 }
 .slobodnaSala{
 	border: 1px solid #C0C0C0;
-    background-color: green;
+    background-color: #71eeb8;
     vertical-align: top;
     margin-left: 10px;
 
@@ -107,7 +107,7 @@ a.nounderline {
 
 .zauzetaSala{
 	border: 1px solid #C0C0C0;
-    background-color: orange;
+    background-color: #FF2400;
     vertical-align: top;
 }
 
