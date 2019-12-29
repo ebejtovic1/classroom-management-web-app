@@ -60,8 +60,6 @@ var Pozivi = (function(){
             //vracene slike sa servera stavljamo na stranicu
             if(re.noviNiz.length==1){
                 t.src=re.noviNiz[0];
-                z.src="#";
-                o.src="#";
                 document.getElementById("slika2").style.visibility = "hidden";
             document.getElementById("slika3").style.visibility = "hidden";
                 nizUcitanihSlika.push(re.noviNiz[0]);
@@ -69,7 +67,6 @@ var Pozivi = (function(){
             else if(re.noviNiz.length==2){
                 t.src=re.noviNiz[0];
                 z.src=re.noviNiz[1];
-                o.src="#";
                 document.getElementById("slika3").style.visibility = "hidden";
                 nizUcitanihSlika.push(re.noviNiz[0]);
                 nizUcitanihSlika.push(re.noviNiz[1]);
