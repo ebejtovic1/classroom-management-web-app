@@ -27,6 +27,18 @@ describe("GET/osoblje", function() {
   });
 });
 
+describe("Test zadatka tri", function() {
+	it("Prikaz ko je u kojoj sali", function(done) {
+    supertest(app)
+    .get("/rez")
+    .expect([{"ime":"Neko Nekic","sala":"U kancelariji"},{"ime":"Drugi Neko","sala":"U kancelariji"},{"ime":"Test Test","sala":"U kancelariji"}])
+    .end(function(err, res) {
+      if (err) done(err);
+      done();
+    });  
+  });
+});
+
 describe("GET/sveSale", function() {
   it("Provjera status koda koji mora biti 200", function(done) {
     supertest(app)
