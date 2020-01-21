@@ -1,7 +1,9 @@
 const Sequelize = require("sequelize");
 
 module.exports = function(sequelize,DataTypes){
-    const Rezervacija = sequelize.define("Rezervacija",{
+    const Sala = sequelize.define("Sala",{
+        naziv:Sequelize.STRING
+
     })
-    return Rezervacija;
+    return Sala;
 };

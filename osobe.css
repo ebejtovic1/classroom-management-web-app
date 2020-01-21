@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+}
+
+.meni{
+    height: 100px; 
+    background-color: #E0E0E0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+}
+html, body{
+    height: 100%;
+    width: 100%;
+     margin:0;
+     min-width: 250px;
+    padding: 0;
+}
+
+.meni li{
+    font-size: 150%;
+    display: inline;
+
+}
+a.nounderline {
+    text-decoration: none; 
+}
+.meni ul{
+    list-style:none;
+    margin-top: -50px;
+    padding:0;
+    text-align:center;
+}
+.meni a{
+    display:inline-block;
+    padding:15px;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("https://cdn.worldvectorlogo.com/logos/general-electric-black.svg");
+    background-size: 100px 100px;
+    transform: translateY(-50%);
+}
+
+.sadrzaj1{
+    height: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+}

@@ -16,6 +16,16 @@ const object = {
 var nizUcitanihSlika=[];
 var duzinaNiza=100;
 
+//Pozivanje svako 30 sekundi funkcije za ispisivanje Osoblja
+window.setInterval(function(){
+
+   //provjerava da li se prikazuje div u koji treba crtati tabelu
+    if ($(".sadrzaj1").is(":visible")){
+        console.log();
+        Pozivi.dajTabelu();
+    }
+}, 30000);
+
 var Pozivi = (function(){
     var ajax = new XMLHttpRequest();
     function ucitavanje(){
@@ -32,6 +42,76 @@ var Pozivi = (function(){
         }
         ajax.open("GET", "http://localhost:8080/zauzeca", true);
         ajax.send();
+    }
+
+    function dajTabelu(){
+
+        ajax.onreadystatechange = function() {
+            if (ajax.readyState == 4 && ajax.status == 404){
+                console.log(ajax.status);
+                }
+            else if (ajax.readyState == 4 && ajax.status == 200){
+
+                let arrr=JSON.parse(ajax.responseText);
+                var html = '<table border=5 style="margin:0 auto"><tbody><tr>';
+                html+='<tr bgcolor=#E0E0E0>';
+                html+='<td>'+'Ime i prezime'+'</td>'+'<td>'+'Sala'+'</td>';
+                html+='</tr>';
+                for (let i = 0; i < arrr.length; i++){
+                    html+='<tr>';
+                html+='<td>'+arrr[i].ime+'</td>'+'<td>'+arrr[i].sala+'</td>';
+                html+='</tr>';
+            }
+            
+                html += '</table>';
+            
+                document.getElementsByClassName("sadrzaj1")[0].innerHTML=html;
+            }
+        }
+        ajax.open("GET", "http://localhost:8080/rez", true);
+        ajax.send();
+        
+    }
+
+    function ucitavanjeOsoblja(){
+        ajax.onreadystatechange = function() {
+            if (ajax.readyState == 4 && ajax.status == 404){
+                console.log(ajax.status);
+                }
+            else if (ajax.readyState == 4 && ajax.status == 200){
+                let arr=JSON.parse(ajax.responseText);
+                var x = document.getElementById("osobe");
+                arr.forEach(osoba1 => {
+                    let novaOsoba = osoba1.ime + " " + osoba1.prezime;
+                    var option = document.createElement("option");
+                    option.text = novaOsoba;
+                    x.add(option);
+                });
+            }
+        }
+        ajax.open("GET", "http://localhost:8080/osoblje", true);
+        ajax.send();
+    }
+
+    function ucitavanjeSala(){
+        ajax.onreadystatechange = function() {
+            if (ajax.readyState == 4 && ajax.status == 404){
+                console.log(ajax.status);
+                }
+            else if (ajax.readyState == 4 && ajax.status == 200){
+                let arr=JSON.parse(ajax.responseText);
+                var x = document.getElementById("sale");
+                arr.forEach(osoba1 => {
+                    let novaOsoba = osoba1.naziv;
+                    var option = document.createElement("option");
+                    option.text = novaOsoba;
+                    x.add(option);
+                });
+            }
+        }
+        ajax.open("GET", "http://localhost:8080/sveSale", true);
+        ajax.send();
+
     }
 
     function ucitajSlike(pocetak){
@@ -128,12 +208,13 @@ var Pozivi = (function(){
         if(trenutniDan.length==1)trenutniDan="0"+trenutniDan;
         let trenutniMjesec=document.getElementById("nazivMjeseca").innerHTML;
         trenutniMjesec = object[trenutniMjesec];
-        let datum = (trenutniDan + "." + ("0"+(trenutniMjesec)).slice(-2) + "." +"2019"); //datum za zauzeća.json
-        let datum2 = (trenutniDan + "/" + ("0"+(trenutniMjesec)).slice(-2) + "/" +"2019"); //datum za alert
-        let dan = new Date(2019, trenutniMjesec-1,trenutniDan);
+        let datum = (trenutniDan + "." + ("0"+(trenutniMjesec)).slice(-2) + "." +"2020"); //datum za zauzeća.json
+        let datum2 = (trenutniDan + "/" + ("0"+(trenutniMjesec)).slice(-2) + "/" +"2020"); //datum za alert
+        let dan = new Date(2020, trenutniMjesec-1,trenutniDan);
         dan=dan.getDay()-1;
         if(dan==-1)dan=6;
         let sala = document.getElementById("sale").value;
+        let predavac = document.getElementById("osobe").value;
         let pocetak = document.getElementById("pocetak").value;
         let kraj = document.getElementById("kraj").value;
         let provjera=event.getElementsByClassName("slobodna");
@@ -156,17 +237,19 @@ var Pozivi = (function(){
                         }
                         else if (ajax.readyState == 4 && ajax.status == 200){
                         const perr=JSON.parse(ajax.responseText);
+
                         if(perr.zauzeto==true){
                             let obavjest=alert("Nije moguće rezervisati salu "+sala+" za navedeni datum " +datum2+ " i termin od " +pocetak+" do "+kraj);
                         }
-                        Kalendar.ucitajPodatke(perr.dataa.periodicna,perr.dataa.vanredna);
+                        ucitavanje();
                          }
                     }
                     let varijabla={
                         datum, 
                         sala,
                         pocetak,
-                        kraj
+                        kraj,
+                        predavac
                     };
                     ajax.open("POST", "http://localhost:8080/zauzeca",true);
                     ajax.setRequestHeader("Content-Type", "application/json");
@@ -196,10 +279,11 @@ var Pozivi = (function(){
                         }
                         else if (ajax.readyState == 4 && ajax.status == 200){
                             const perr=JSON.parse(ajax.responseText);
+
                             if(perr.zauzeto==true){
                                 let obavjest=alert("Nije moguće rezervisati salu "+sala+" za navedeni datum " +datum2+ " i termin od " +pocetak+" do "+kraj);
                             }
-                            Kalendar.ucitajPodatke(perr.dataa.periodicna,perr.dataa.vanredna);
+                            ucitavanje();
                              }
                     }
                     let varijabla={
@@ -207,7 +291,8 @@ var Pozivi = (function(){
                         semestar, 
                         sala,
                         pocetak,
-                        kraj
+                        kraj,
+                        predavac
                     };
                     ajax.open("POST", "http://localhost:8080/zauzeca1",true);
                     ajax.setRequestHeader("Content-Type", "application/json");
@@ -219,13 +304,35 @@ var Pozivi = (function(){
 
         }
         else{
-            let h=alert("Nije moguće rezervisati salu "+sala+" za navedeni datum " +datum2+ " i termin od " +pocetak+" do "+kraj);
+
+            ajax=new XMLHttpRequest();
+            ajax.onreadystatechange = function(){
+                if (ajax.readyState == 4 && ajax.status == 404){
+                    console.log(ajax.status);
+                }
+                else if (ajax.readyState == 4 && ajax.status == 200){
+                    let nestonesto= ajax.responseText;
+                    let h=alert("Nije moguće rezervisati salu "+sala+" za navedeni datum " +datum2+ " i termin od " +pocetak+" do "+kraj + ". Sala je vec rezervisana od strane: "+ nestonesto);
+                 }
+            }
+            let varijabla={
+                datum: datum, 
+                sala: sala,
+                pocetak: pocetak,
+                kraj: kraj,
+            };
+            ajax.open("POST", "http://localhost:8080/zauzeo",true);
+            ajax.setRequestHeader("Content-Type", "application/json");
+            ajax.send(JSON.stringify(varijabla));
         }
     }
 
     return{
         ucitavanje: ucitavanje,
         kliknuto: kliknuto,
-        ucitajSlike: ucitajSlike
+        ucitajSlike: ucitajSlike,
+        ucitavanjeOsoblja: ucitavanjeOsoblja,
+        dajTabelu: dajTabelu,
+        ucitavanjeSala: ucitavanjeSala
     }
 }());

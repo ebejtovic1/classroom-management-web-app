@@ -114,6 +114,14 @@ html, body{
     text-align: center;
 
 }
+#godina{
+    text-align: center;
+    margin-left: 38.2%;
+    margin-top: 10px;
+    background-color: #E0E0E0;
+    width: 5%;
+    text-decoration: solid;
+}
 #nazivMjeseca{
     text-align: left;
     height: 30px;
