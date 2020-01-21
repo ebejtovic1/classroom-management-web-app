@@ -16,7 +16,8 @@ Da bi pokrenuli testove, prvo pokrećete node index.js i prekinete (CTRL-C), zat
 u index.js linije od 30-36 tj. db.sequalize.sync (i sacuvajte (Save All)).
 Nakon sto to uradite u konzoli kucate npm test.
 
-Svi testovi prolaze prilikom prvog pokretanja. Svako sljedeće pokretanje testova će dovesti do pada 
+Svi testovi prolaze prilikom prvog pokretanja (jedino se zna desiti da se sale obrnutim redoslijedom upisu i slicno, pa samo redoslijed bude obrnut). 
+Svako sljedeće pokretanje testova će dovesti do pada 
 nekih testova zbog promjene u bazi. Ako želite opet pokrenuti testove morate odkomentarisati 
 navedene linije, te opet ponoviti cijeli proces.
 Kod za testove se nalazi u test.js
