@@ -74,43 +74,47 @@ var Pozivi = (function(){
     }
 
     function ucitavanjeOsoblja(){
-        ajax.onreadystatechange = function() {
-            if (ajax.readyState == 4 && ajax.status == 404){
-                console.log(ajax.status);
+        var ajax3 = new XMLHttpRequest();
+        ajax3.onreadystatechange = function() {
+            if (ajax3.readyState == 4 && ajax3.status == 404){
+                console.log(ajax3.status);
                 }
-            else if (ajax.readyState == 4 && ajax.status == 200){
-                let arr=JSON.parse(ajax.responseText);
+            else if (ajax3.readyState == 4 && ajax3.status == 200){
+                let arr = JSON.parse(ajax3.responseText);
+
                 var x = document.getElementById("osobe");
-                arr.forEach(osoba1 => {
-                    let novaOsoba = osoba1.ime + " " + osoba1.prezime;
+                for (let i = 0; i < arr.length; i++) {
+                    let novaOsoba = arr[i].ime + " " + arr[i].prezime;
                     var option = document.createElement("option");
                     option.text = novaOsoba;
                     x.add(option);
-                });
+                }
             }
         }
-        ajax.open("GET", "http://localhost:8080/osoblje", true);
-        ajax.send();
+        ajax3.open("GET", "http://localhost:8080/osoblje", true);
+        ajax3.send();
     }
 
+
     function ucitavanjeSala(){
-        ajax.onreadystatechange = function() {
-            if (ajax.readyState == 4 && ajax.status == 404){
-                console.log(ajax.status);
+        var ajax2 = new XMLHttpRequest();
+        ajax2.onreadystatechange = function() {
+            if (ajax2.readyState == 4 && ajax2.status == 404){
+                console.log(ajax2.status);
                 }
-            else if (ajax.readyState == 4 && ajax.status == 200){
-                let arr=JSON.parse(ajax.responseText);
+            else if (ajax2.readyState == 4 && ajax2.status == 200){
+                let arr=JSON.parse(ajax2.responseText);
                 var x = document.getElementById("sale");
-                arr.forEach(osoba1 => {
-                    let novaOsoba = osoba1.naziv;
+                for (let i = 0; i < arr.length; i++) {
+                    let novaOsoba = arr[i].naziv;
                     var option = document.createElement("option");
                     option.text = novaOsoba;
                     x.add(option);
-                });
+                }
             }
         }
-        ajax.open("GET", "http://localhost:8080/sveSale", true);
-        ajax.send();
+        ajax2.open("GET", "http://localhost:8080/sveSale", true);
+        ajax2.send();
 
     }
 

@@ -22,17 +22,19 @@ function myFunction(){
 }
 
 function naUcitavanje(){
-    Pozivi.ucitavanjeOsoblja();    
-    
+    Pozivi.ucitavanjeOsoblja();
+    naUcitavanje1();
+  
 }
 
-function naUcitavanje1(){
+function naUcitavanje1() {
 
-    setTimeout("Pozivi.ucitavanjeSala()",100);    
+    Pozivi.ucitavanjeSala();   
     
 }
 
 function naKlik(inf){
     Pozivi.kliknuto(inf);
 }
+
 
