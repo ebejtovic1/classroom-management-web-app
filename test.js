@@ -3,16 +3,6 @@ const assert = require('assert');
 const app = require("./index");
 
 describe("GET/osoblje", function() {
-  it("Provjera status koda koji mora biti 200", function(done) {
-    supertest(app)
-      .get("/osoblje")
-      .expect(200)
-      .end(function(err, res){
-        if (err) done(err);
-        done();
-      });
-  });
-
   it("Provjera da li je vraceno svo osoblje", function(done) {
     supertest(app)
       .get("/osoblje")
@@ -40,16 +30,6 @@ describe("Test zadatka tri", function() {
 });
 
 describe("GET/sveSale", function() {
-  it("Provjera status koda koji mora biti 200", function(done) {
-    supertest(app)
-      .get("/sveSale")
-      .expect(200)
-      .end(function(err, res){
-        if (err) done(err);
-        done();
-      });
-  });
-
   it("Provjera da li su vracene sve sale", function(done) {
     supertest(app)
       .get("/sveSale")
@@ -63,15 +43,6 @@ describe("GET/sveSale", function() {
 
 
 describe("GET/zauzeca", function() {
-  it("Provjera status koda koji mora biti 200", function(done) {
-    supertest(app)
-      .get("/zauzeca")
-      .expect(200)
-      .end(function(err, res){
-        if (err) done(err);
-        done();
-      });
-  });
 
   it("Provjera da li su vracena sva zauzeca", function(done) {
     supertest(app)
