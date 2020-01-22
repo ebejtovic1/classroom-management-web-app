@@ -46,17 +46,22 @@ function inicializacija() {
     return new Promise(function(resolve, reject){
 
         //Punimo tabelu osoblje podacima
+
         osobljeListaPromisea.push(db.osoblje.create({ime:'Neko', prezime: 'Nekic', uloga:'profesor'}));
         osobljeListaPromisea.push(db.osoblje.create({ime:'Drugi', prezime: 'Neko', uloga:'asistent'}));
         osobljeListaPromisea.push(db.osoblje.create({ime:'Test', prezime: 'Test', uloga:'asistent'}));
+
         Promise.all(osobljeListaPromisea).then(function(osobe){
             let prvaOsoba = osobe.filter(function (a){ return a.ime === 'Neko' })[0];
             let drugaOsoba = osobe.filter(function (a){ return a.ime === 'Drugi' })[0];
             let trecaOsoba = osobe.filter(function (a){ return a.ime === 'Test' })[0];
            
             //Punimo tabelu sala nakon sto je popujena tabelao osoblje 
-            saleListaPromisea.push(db.sala.create({ naziv: '1-11', zaduzenaOsoba: prvaOsoba.id }));
-            saleListaPromisea.push(db.sala.create({ naziv: '1-15', zaduzenaOsoba: drugaOsoba.id }));
+            saleListaPromisea.push(db.sala.create({ naziv: '1-11', zaduzenaOsoba: prvaOsoba.id }).then(function(s){
+                saleListaPromisea.push(db.sala.create({ naziv: '1-15', zaduzenaOsoba: drugaOsoba.id }));
+                return new Promise(function(resolve, reject){resolve(s);});
+            }));
+            
             //Punimo tabelu termina
             terminListaPromisea.push(db.termin.create({redovni:false, dan:null, datum:'01.01.2020',semestar:null, pocetak:'12:00', kraj:'13:00'}));
             terminListaPromisea.push(db.termin.create({redovni:true, dan:0, datum:null, semestar:'zimski', pocetak:'13:00', kraj:'14:00'}));
