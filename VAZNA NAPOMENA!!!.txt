@@ -3,10 +3,12 @@
 2. U slučaju da je vaš port defaultni tj. 3306 (ili neki drugi), a ne kao kod mene 3308,
 izbrišite ga ili promijenite u liniji 2 u fajlu db.js
 
-3. Pokretanje servera je pomocu index.js
+3. Pokretanje servera je pomocu node index.js
 
 4. Ako dođe do errora prilikom pokretanja node index.js da neka tabela nije pronađena, 
 potrebno je samo ponovo pokrenuti node ponovo. (Mada se ovo ne bi trebalo desiti)
+
+5. U browser ukucati http://localhost:8080/pocetna.html
 
 
 UPUSTVO ZA POKRETANJE TESTOVA:
