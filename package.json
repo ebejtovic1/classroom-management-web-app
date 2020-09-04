@@ -11,7 +11,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "mysql2": "^1.5.1",
-    "sequelize": "^4.31.2"
+    "sequelize": "^5.15.1"
   },
   "devDependencies": {
     "mocha": "^7.0.0",
